@@ -771,12 +771,13 @@
   /* 6b. WALLET CONNECT MODAL                                             */
   /* ------------------------------------------------------------------ */
 
-  const RECOMMENDED_WALLETS = ['Coinbase', 'OKX Wallet', 'MetaMask', 'Binance Wallet', 'Rabby', 'Phantom', 'Robinhood Wallet', 'Trust Wallet'];
-  const MORE_WALLETS = ['WalletConnect', 'Ledger', 'Trezor', 'Safe'];
+  const RECOMMENDED_WALLETS = ['WalletConnect','Coinbase', 'OKX Wallet', 'MetaMask', 'Binance Wallet', 'Rabby', 'Phantom', 'Robinhood Wallet', 'Trust Wallet'];
+  const MORE_WALLETS = [ 'Ledger', 'Trezor', 'Safe'];
 
   // Clean, original monogram-style marks (not brand logos) so each wallet stays
   // visually distinct while fitting Prosor's existing inline-SVG icon system.
   const WALLET_STYLE = {
+    'WalletConnect':  { bg: '#3B99FC', fg: '#FFFFFF', mono: 'WC' },
     'Coinbase':       { bg: '#1652F0', fg: '#FFFFFF', mono: 'C'  },
     'OKX Wallet':     { bg: '#1C202B', fg: '#F4F7FA', mono: 'OK' },
     'MetaMask':       { bg: '#F6851B', fg: '#1A0F00', mono: 'M'  },
@@ -784,7 +785,6 @@
     'Rabby':          { bg: '#7084FF', fg: '#0B0D12', mono: 'R'  },
     'Phantom':        { bg: '#AB9FF2', fg: '#0B0D12', mono: 'P'  },
     'Robinhood Wallet': { bg: '#12FF80', fg: '#04140D', mono: 'R'  },
-    'WalletConnect':  { bg: '#3B99FC', fg: '#FFFFFF', mono: 'WC' },
     'Trust Wallet':   { bg: '#3375BB', fg: '#FFFFFF', mono: 'T'  },
     'Ledger':         { bg: '#111111', fg: '#F4F7FA', mono: 'L'  },
     'Trezor':         { bg: '#1BA672', fg: '#04140D', mono: 'TZ' },
